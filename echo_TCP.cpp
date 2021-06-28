@@ -36,7 +36,7 @@ int main(int argc, char **argv)
     int rc = bind(mySocket, (const sockaddr*) selfAddr, sizeof (sockaddr_in));
     if (rc == -1) { 
         close(mySocket);
-        errHandler("Ошибка привязски сокета к покету", 12);
+        errHandler("Ошибка привязки сокета к покету", 12);
     }
 
     rc = connect(mySocket, (const sockaddr*) remoteAddr, sizeof(sockaddr_in));
