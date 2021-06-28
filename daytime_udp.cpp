@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     rc = connect(mySocket, (const sockaddr*) remoteAddr, sizeof(sockaddr_in));
     if (rc == -1) {
         close(mySocket);
-        errHandler("Ошибка связи с уалённым сервером", 13);
+        errHandler("Ошибка связи с удалённым сервером", 13);
     }
 
     rc = send(mySocket, buf, msgLen, 0);
